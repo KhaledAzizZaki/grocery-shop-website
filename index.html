@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
+
     <!-- Tailwind CSS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -24,6 +25,13 @@
         },
       };
     </script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/76f5c2f484.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +39,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+
     <!-- Style -->
     <style>
       .font-poppins {
@@ -41,8 +50,79 @@
       }
     </style>
   </head>
-  <body class="font-poppins">
-    <header></header>
+  <body class="font-sora">
+    <header class="bg-gradient-to-t from-secondary to-[rgba(255, 255,255, 0)]">
+      <!-- Navbar -->
+      <nav class="container mx-auto pt-4">
+        <div class="navbar bg-base-100 w-11/12 mx-auto">
+          <div class="navbar-start">
+            <img class="lg:hidden" src="assets/logo-m.png" alt="" />
+            <img class="hidden lg:flex" src="assets/logo-header.png" alt="" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-5">
+            <a class="hidden lg:flex">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a class="hidden lg:flex">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a class="btn hidden lg:flex btn-outline btn-success">Login</a>
+            <a class="btn hidden lg:flex bg-accent text-white">Register</a>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-accent"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow -ml-40"
+              >
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr class="border-accent lg:hidden" />
+
+      <!-- Hero section -->
+      <section class="text-center my-24 space-y-8 px-5">
+        <h1 class="font-semibold md:text-6xl text-4xl">
+          Freshness
+          <span class="text-accent">
+            You Can <br />
+            Count
+          </span>
+          On, Prices You’ll Love!
+        </h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+        <img class="mx-auto" src="assets/hero-vegetables.png" alt="" />
+      </section>
+    </header>
 
     <main></main>
 
